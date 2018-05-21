@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  title: MyString
+  content: MyString
+  poem_id: 1
+  user_id: 1
+
+two:
+  category: MyString
+  title: MyString
+  content: MyString
+  poem_id: 1
+  user_id: 1

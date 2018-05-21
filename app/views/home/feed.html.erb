@@ -1,0 +1,31 @@
+<div class="titles">
+<h4>Poetry Library</h4>
+<h6>Come for the Passion</h6>
+<h6>Stay for the Knowledge</h6>
+</div>
+<h3><% @poems.each do |poem| %></h3>
+    <div id="allpoems" class="AP" style=" ">
+    
+    <p><strong>Category:<%= poem.category %></strong>
+
+    </p>
+
+    <p><strong>Title:<%= poem.title %></strong>
+
+    </p>
+
+    <p>
+        <%= poem.content %>
+    </p>
+
+    <p>Posted on:
+        <%=poem.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <br>
+
+    
+    <td>
+   
+</td>
+    <% end %>

@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>Find your Expression event below</h1>
-
-<div id="Mapquest" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-    center:new mapquest.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new mapquest.maps.Map(document.getElementById("Mapquest"),mapProp);
-}
-</script>
-
-<script src= "https://www.mapquestapi.com/directions/v2/route?key=KEY&from=Denver%2C+CO&to=Boulder%2C+CO&outFormat=json&ambiguities=ignore&routeType=fastest&doReverseGeocode=false&enhancedNarrative=false&avoidTimedConditions=false"></script>
-
-</body>
+  <head>
+    
+  </head>
+   <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUmoqnfZNaHEu6CNpwT1EF-cZYZEBAAqI&callback=initMap">
+    </script>
+  <body>
+    <h3>Expression Events</h3>
+    <div id="map"></div>
+    <div class="PQ">
+    <h5>Open Mic Night</h5>
+    <p>555 W Annsbury st.</p>
+    <p>Philadelphia, PA</p>
+    <p>Sat. May 26th 7:00PM-9:00pm</p>
+    <p>Price: $10.00</p>
+    <br>
+    <h5>Lyrical Cafe| Open Mic</h5>
+    <p>Our House Culture Center</p>
+    <p>Philadelphia, PA</p>
+    <p>Sat. May 26th 8:00PM-11:00PM</p>
+    <p>Price: $5.00</p>
+    <br>
+    </div>
+    <div class="PR">
+    <h5>Summer Nights</h5>
+    <p>Fumo Family Library</p>
+    <p>2437 South Broad st</p>
+    <p>Philadelphia PA 19148</p>
+    <p>Wed. June 20th 6:30PM-7:30PM</p>
+    <p>Price: Free</p>
+    <br>
+    <h5>Women in Music/Philly Love Da Mic</h5>
+    <p>@Sankofa House</p>
+    <p>906 S 49th St</p>
+    <p>Philadelphia PA 19143</p>
+    <p>Sat. June 9th 5:00PM-9:00PM</p>
+    <p>Price: $10.00</p>
+    <br>
+    </div>
+   
+   
+  </body>
 </html>

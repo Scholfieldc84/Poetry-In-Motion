@@ -26,7 +26,12 @@
               <li><a href="/About"><i class="material-icons">all_inclusive</i></a></li>
               <li><a href="/library"><i class="material-icons">collections</i></a></li>
               <li><a href="/FindEvent"><i class="material-icons">keyboard_voice</i></a></li>
-              <li><a href="/Signin_Signup"><i class="material-icons">group_add</i></a></li>
+
+              <li><a href="/Signin_Signup"><i class="material-icons">fingerprint</i></a></li>
+               <%if current_poet %>
+               <li><a href="/Profile"><i class="material-icons">person</i></a></li>
+               <li><a href="/Logout"><i class="material-icons">settings_power</i></a></li>
+               <% end %>
             </ul>
           </div>
         </nav>

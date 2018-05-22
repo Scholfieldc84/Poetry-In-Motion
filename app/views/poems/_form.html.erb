@@ -1,3 +1,5 @@
+<h4>Create Your own poem below</h4>
+
 <%= form_with(model: poem, local: true) do |form| %>
   <% if poem.errors.any? %>
     <div id="error_explanation">
@@ -26,10 +28,7 @@
     <%= form.text_field :content %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
+ 
 
   <div class="actions">
     <%= form.submit %>

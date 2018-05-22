@@ -16,6 +16,7 @@ class HomeController < ApplicationController
   end
 
   def sign_in_sign_up
+
   end
 
   def logout

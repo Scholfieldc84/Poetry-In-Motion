@@ -15,6 +15,8 @@ class PoemsController < ApplicationController
   # GET /poems/new
   def new
     @poem = Poem.new
+    @poet = Poet.new
+    @poets = Poet.all
   end
 
   # GET /poems/1/edit
@@ -25,7 +27,7 @@ class PoemsController < ApplicationController
   # POST /poems.json
   def create
     @poem = Poem.new(poem_params)
-
+    # @poem.poet_id = current_poet.id
     respond_to do |format|
       if @poem.save
         format.html { redirect_to @poem, notice: 'Poem was successfully created.' }
@@ -70,5 +72,10 @@ class PoemsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def poem_params
       params.require(:poem).permit(:category, :title, :content, :user_id)
+    end
+
+       # Never trust parameters from the scary internet, only allow the white list through.
+   def poet_params
+      params.require(:poet).permit(:username, :email, :firstname, :lastname, :password,:password_confirmation, :user_id)
     end
 end

@@ -1,0 +1,63 @@
+
+	<div id="container">
+	<a class="hiddenanchor" id="toregister"></a>
+	<a class="hiddenanchor" id="tologin"></a>
+	<div id="wrapper">
+		<div id="login" class="animate form">
+			<form  method="post" action='/Signin' autocomplete="on"> 
+				<h1>Log in</h1> 
+				<p> 
+					<label for="username" class="uname" data-icon="u" > Your email or username </label>
+					<input id="username" name="[poet]username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+				</p>
+				<p> 
+					<label for="password" class="youpasswd" data-icon="p"> Your password </label>
+					<input id="password" name="[poet]password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+				</p>
+				<p class="keeplogin"> 
+					<input type="checkbox" name="[poet]loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+					<label for="loginkeeping">Keep me logged in</label>
+				</p>
+				<p class="login button"> 
+					<input type="submit" value="Login" /> 
+				</p>
+			
+			</form>
+		</div>
+
+		<div id="register" class="animate form">
+			<form method="post" action="/Signup" autocomplete="on"> 
+				<h1> Sign up </h1> 
+				<p> 
+					<label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+					<input id="usernamesignup" name="[poet]username" required="required" type="text" placeholder="mysuperusername690" />
+				</p>
+				<p> 
+					<label for="firstnamesignup" class="youmail" data-icon="e" > Your First</label>
+					<input id="firstsignup" name="[poet]firstname" required="required" type="email" placeholder="superman"/> 
+				</p>
+				<p> 
+					<label for="lastnamesignup" class="youmail" data-icon="e" > Last name</label>
+					<input id="lastnamesignup" name="[poet]lastname" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+				</p>
+				<p> 
+					<label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+					<input id="emailsignup" name="[poet]email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+				</p>
+				<p> 
+					<label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+					<input id="passwordsignup" name="[poet]password" required="required" type="password" placeholder="eg. X8df!90EO"/>
+				</p>
+				<p> 
+					<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+					<input id="passwordsignup_confirm" name=[poet]"password_confirmation" required="required" type="password" placeholder="eg. X8df!90EO"/>
+				</p>
+				<p class="signin button"> 
+					<input type="submit" value="Sign up"/> 
+				</p>
+			
+			</form>
+		</div>
+		
+	</div>
+</div>  

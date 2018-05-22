@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @poet.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @poet.email %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @poet.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @poet.lastname %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @poet.password %>
+</p>
+
+<%= link_to 'Profile', poet_path(@poet) %> |
+<%= link_to 'Edit', edit_poet_path(@poet) %> |
+<%= link_to 'Back', poets_path %>
+  <% if current_poet %>
+    <%= link_to 'Sign Out', signout_path, method: :delete %>
+    <% end %>|
+<td><%= link_to 'Destroy', @poet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

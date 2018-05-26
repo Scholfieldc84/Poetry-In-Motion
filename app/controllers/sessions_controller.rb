@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
   		redirect_to poet_path(poet)
 	else
 		p poet.errors.full_messages
-		redirect_to sign_in_path
+		redirect_to signin_path
   	end
   end
      #creates poet

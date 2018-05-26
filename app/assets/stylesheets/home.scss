@@ -91,11 +91,28 @@
 .PQ{
   position: absolute;
   top: 95%;
-  left: 25%;
+  left: 35%;
+  color: red;
   
 }
 .PR{
   position: absolute;
   top: 95%;
+  left: 65%;
+  color: red;
+}
+.mic{
+  position: absolute;
+  top: 95%;
+  left: 0%;
+}
+.event{
+  position: absolute;
+  top: 260%;
   left: 60%;
+}
+.image{
+  position: absolute;
+  top: 260%;
+  left: 5%;
 }

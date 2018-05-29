@@ -18,14 +18,14 @@
 
 
 
- function initMap() {
+ function initAutocomplete() {
    var cen = {lat: 39.958224, lng: -75.173135}
         var map = new google.maps.Map(document.getElementById('map'), {
          zoom: 11,
          center: cen
        });
                 var locations = [
-       ['Open Mic Night',40.021009, -75.136341],
+            ['Open Mic Night',40.021009, -75.136341],
             ['Lyrical Cafe|Open Mic',39.949857, -75.148505],
             ['Summer Nights',39.919828, -75.170316],
             ['Women in Music/Philly Love Da Mic',39.945942, -75.219053]
@@ -46,4 +46,15 @@
           }
         })(marker, count));
       }
+      // var defaultBounds = new google.maps.LatLngBounds(
+      //   new google.maps.LatLng(-33.8902, 151.1759),
+      //   new google.maps.LatLng(-33.8474, 151.2631));
+
+      // var input = document.getElementById('searchTextField');
+      // var options = {
+      //   bounds: defaultBounds,
+      //   types: ['establishment']
+      // };
+
+      // autocomplete = new google.maps.places.Autocomplete(input, options);
 }
